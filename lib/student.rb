@@ -33,7 +33,7 @@ class Student
       SQL
       
     DB[:conn].execute(sql, self.name, self.grade)
-    @id = DB[:conn].execute(sql,SELECT LAST_INSERT_ ROW(id))
+    @id = DB[:conn].execute(sql,SELECT LAST_INSERT_ ROW(id));
   end
   
   def self.create(name:, grade:) 
